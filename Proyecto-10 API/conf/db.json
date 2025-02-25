@@ -1,0 +1,7 @@
+{
+    "MOTOR":"mysql+mysqlconnector",
+    "USER":"root",
+    "PASSWORD":"",
+    "SERVER":"localhost",
+    "DATABASE":"danza_fenix"
+}
