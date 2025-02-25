@@ -1,0 +1,9 @@
+ # #tkinter==8.6
+ mypy==0.812
+ Flask==2.3.2
+ Pillow==9.5.0
+ mysql-connector-python==8.0.33
+ python-decouple==3.8
+ keyboard==0.13.5
+
+
