@@ -1,0 +1,7 @@
+data.csv
+knn_model.pkl
+.vino_env
+.vercel
+dataset_vinos.csv
+modelo.pickle
+__pycache__
