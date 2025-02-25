@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Alexis</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+</head>
+<body>
+    
+    <section class="section_notice">
+        {% for news in noticias_pagina %}
+            <div class="card">
+                <div class="card-title">
+                    <h1>
+                        <a href=" {{ news.links }}" target="_blank">
+                            {{news.username}}
+                        </a>
+                    </h1>
+                </div>
+                <div class="card-text">
+                    <p>{{ news.text }}</p>
+                </div>
+                <div class="card-date">
+                    <p>{{ news.time }}</p>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="pagination">
+            {% if noticias_pagina.has_previous %}
+                <a href="?page=1">Primera</a>
+            {% endif %}
+
+            {% if noticias_pagina.has_previous %}
+                <a href="?page={{ noticias_pagina.previous_page_number }}">Anterior</a>
+            {% endif %}
+        
+      
+        
+            {% if noticias_pagina.has_next %}
+                <a href="?page={{ noticias_pagina.next_page_number }}">Siguiente</a>
+            {% endif %}
+
+            {% if noticias_pagina.has_next %}
+                <a href="?page={{ noticias_pagina.paginator.num_pages }}">Ultima</a>
+            {% endif %}
+            
+        </div>
+        
+    </section>
+    <section class="section-info">
+        <div class="menu">
+            <p class="text-menu">Menu</p>
+        </div>
+        <div class="paginator-section">
+            <span class="current-page">{{ noticias_pagina.number }}</span>
+        </div>
+    </section>
+    {% load static %}
+    <script src="{% static 'index.js' %}"></script>
+</body>
+</html>
