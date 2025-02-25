@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+seaborn
+streamlit
+dtale
+mitosheet
+scikit-learn
+ydata_profiling
+catboost
+xgboost
+tabulate
+mysql-connector-python
+pymysql
+python-decouple
