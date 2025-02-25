@@ -1,0 +1,82 @@
+
+.rain-container {
+	position: absolute;
+    /* esto definira las compensaciones de inicio y final */
+	inset: 0;
+    /* esto nos permitira cortar los elementos que se salen del contenedor */
+	overflow: hidden;
+}
+
+/* Los keyframes nos sirve para dar un nombre y definir los fotogramas clave  */
+@keyframes flake {
+	0% {
+        /* Inicio de la animación */
+		transform: translate(var(--x-start), var(--y-start)) rotate(0);
+	}
+	100% {
+        /* Fin de la animación */
+		transform: translate(var(--x-end), var(--y-end)) rotate(50deg);
+	}
+}
+
+.rainDrop {
+    font-size: var(--sz);
+	filter: blur(var(--blur));
+	animation: flake 20s linear infinite;
+	transform: translate(var(--x-start), -15vh) rotate(0);
+	opacity: var(--a);
+	z-index: -1;
+}
+
+.rainDrop--s {
+	z-index: .1;
+	--sz: 1rem;
+	--blur: 2px;
+	--a: 0.8;
+	--x-start: 50vw;
+	--x-end: 0;
+	--y-start: 0;
+	--y-end: 100vh;
+	position: absolute;    
+}
+
+.rainDrop--m {
+	z-index: -1;
+	--sz: 2rem;
+	--blur: 2px;
+	--a: 0.8;
+	--x-start: 50vw;
+	--x-end: 0;
+	--y-start: 0;
+	--y-end: 100vh;
+	position: absolute;
+	filter: blur(0px);
+	z-index: 50;
+}
+
+.rainDrop--l {
+	z-index: -1;
+	--sz: 3rem;
+	--blur: 0px;
+	--a: 0.8;
+	--x-start: 50vw;
+	--x-end: 0;
+	--y-start: 0;
+	--y-end: 100vh;
+	position: absolute;
+	z-index: 80;
+}
+
+.rainDrop--xl {
+	z-index: -1;
+	--sz: 6rem;
+	--blur: 4px;
+	--a: 0.5;
+	--x-start: 50vw;
+	--x-end: 0;
+	--y-start: 0;
+	--y-end: 100vh;
+	position: absolute; 
+	z-index: 100;
+}
+

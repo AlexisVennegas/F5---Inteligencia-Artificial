@@ -1,0 +1,35 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    z-index: 999;
+}
+a {
+    display: flex;
+    border: none;
+    text-decoration: none;
+    justify-content: center;
+    color: white;
+}
+
+a > img {
+    width: 37px;
+    margin: 0px 12px;
+}
+
+
+.icon_back {
+    display: flex;
+    justify-content: flex-end;
+}
+.icon_back > svg {
+    color : #075E54;
+    font-size: 50px;
+}

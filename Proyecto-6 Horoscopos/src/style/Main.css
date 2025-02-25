@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Section_Horoscopo {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 4px;
+    /* padding: 5px; */
+    width: 50%;
+    height: auto;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.section_whatsapp {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 4px;
+    padding: 5px;
+    width: 50%;
+    height: auto;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+
+.title_horoscopo {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.title_horoscopo > h1 {
+    font-size: 45px;
+}	
+.body_horoscopo {
+    width: 100%;
+    height: 50%;
+}
+
+.descrip_horoscopo {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descrip_horoscopo > h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+.form_horoscopo {
+    width: 100%;
+    height: 45%;
+  
+}
+
+.form_pedejo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 22px;
+}
+
+.parameter_horosc {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 27px;
+    transition: .3s;
+}
+
+.parameter_horosc > h1 {
+    transition: .3s;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@media screen and (width < 1000px) {
+    .Section_Horoscopo {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border-radius: 4px;
+        /* padding: 5px; */
+        width: 95%;
+        height: auto;
+        transition: .4s;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+    }
+}
+.buttons-container {
+    justify-content: space-evenly;
+    width: 71%;
+    display: flex;
+    position: 3s;
+}
+.scale-up-ver-bottom{-webkit-animation:scale-up-ver-bottom .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-ver-bottom .4s cubic-bezier(.39,.575,.565,1.000) both}
+
+@-webkit-keyframes scale-up-ver-bottom{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);-webkit-transform-origin:0 100%;transform-origin:0 100%}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:0 100%;transform-origin:0 100%}}@keyframes scale-up-ver-bottom{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);-webkit-transform-origin:0 100%;transform-origin:0 100%}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:0 100%;transform-origin:0 100%}}
